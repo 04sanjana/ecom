@@ -1,0 +1,65 @@
+// General styles for the home component
+:host {
+    display: block;
+    padding: 16px;
+    background-color: #f9f9f9; // Light gray background
+    font-family: Arial, sans-serif;
+  }
+  
+  // Styling the card container
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; // Space between cards
+    justify-content: center;
+  }
+  
+  // Styling individual cards
+  .card {
+    background-color: white;
+    border: 1px solid #ddd; // Subtle border
+    border-radius: 8px; // Rounded corners
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+    padding: 16px;
+    width: 300px; // Fixed width
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+    &:hover {
+      transform: translateY(-5px); // Lift the card on hover
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Stronger shadow on hover
+    }
+  }
+  
+  // Header styling
+  .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  // Description styling
+  .card-description {
+    font-size: 1rem;
+    color: #555; // Gray text
+    margin-bottom: 16px;
+  }
+  
+  // Button styling
+  .card-button {
+    background-color: #007bff; // Blue button
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  
+    &:hover {
+      background-color: #0056b3; // Darker blue on hover
+    }
+  }
+  
